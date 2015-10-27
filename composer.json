@@ -1,0 +1,45 @@
+{
+    "name": "thinktomorrow/sling",
+    "description": "easy to use wrapper around Laravel Mail api",
+    "keywords": [
+        "thinktomorrow",
+        "sling"
+    ],
+    "homepage": "https://github.com/thinktomorrow/sling",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bencavens",
+            "email": "cavensben@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5",
+        "illuminate/mail": "^5.1",
+        "illuminate/log": "^5.1",
+        "mockery/mockery": "^0.9.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Thinktomorrow\\Sling\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
