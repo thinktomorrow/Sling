@@ -35,14 +35,14 @@ class A_MessageTest extends TestCase {
 
     public function test_it_forces_data_as_array()
     {
-        $this->setExpectedException('ErrorException');
+        $this->setExpectedException('TypeError');
 
         $this->message->data('foo');
     }
 
     public function test_it_forces_headers_as_array()
     {
-        $this->setExpectedException('ErrorException');
+        $this->setExpectedException('TypeError');
 
         $this->message->headers('foo');
     }

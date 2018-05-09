@@ -3,7 +3,7 @@
 use BadMethodCallException;
 use Thinktomorrow\Sling\Exceptions\MissingValuesException;
 use Illuminate\Mail\Mailer as LaravelMailer;
-use Illuminate\Log\Writer as Log;
+use Illuminate\Log\Logger as Log;
 
 class BaseMailer implements Mailer {
 

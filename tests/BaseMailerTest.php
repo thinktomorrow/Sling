@@ -13,7 +13,7 @@ class BaseMailerTest extends TestCase {
 
         $this->laravelMailer = Mockery::mock('Illuminate\Mail\Mailer');
         $this->message = new Thinktomorrow\Sling\Message;
-        $this->log = Mockery::mock('Illuminate\Log\Writer');
+        $this->log = Mockery::mock('Illuminate\Log\Logger');
 
         $this->basemailer = new Thinktomorrow\Sling\BaseMailer($this->laravelMailer,$this->message,$this->log);
     }
