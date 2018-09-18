@@ -62,7 +62,7 @@ class BaseMailerTest extends TestCase {
 
     public function test_it_sends_if_all_required_fields_are_set()
     {
-        $this->setExpectedException('Thinktomorrow\Sling\Exceptions\MissingValuesException');
+        $this->expectException('Thinktomorrow\Sling\Exceptions\MissingValuesException');
 
         $this->laravelMailer->shouldReceive('send')->never();
         $this->log->shouldReceive('info')->never();
