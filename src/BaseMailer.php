@@ -1,4 +1,6 @@
-<?php namespace Thinktomorrow\Sling;
+<?php
+
+namespace Thinktomorrow\Sling;
 
 use BadMethodCallException;
 use Thinktomorrow\Sling\Exceptions\MissingValuesException;

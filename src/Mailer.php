@@ -1,4 +1,6 @@
-<?php namespace Thinktomorrow\Sling;
+<?php
+
+namespace Thinktomorrow\Sling;
 
 interface Mailer{
 	

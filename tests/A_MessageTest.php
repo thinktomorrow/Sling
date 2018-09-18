@@ -13,7 +13,7 @@ class A_MessageTest extends TestCase {
 
     public function test_it_cannot_set_a_property_directly()
     {
-        $this->setExpectedException('Exception');
+        $this->expectException('Exception');
 
         $this->message->to = 'foo';
         $this->assertNull($this->message->to);
@@ -28,28 +28,28 @@ class A_MessageTest extends TestCase {
 
     public function test_it_checks_for_valid_recipient_email()
     {
-        $this->setExpectedException('InvalidArgumentException');
+        $this->expectException('InvalidArgumentException');
 
         $this->message->to('foo','bar');
     }
 
     public function test_it_forces_data_as_array()
     {
-        $this->setExpectedException('TypeError');
+        $this->expectException('TypeError');
 
         $this->message->data('foo');
     }
 
     public function test_it_forces_headers_as_array()
     {
-        $this->setExpectedException('TypeError');
+        $this->expectException('TypeError');
 
         $this->message->headers('foo');
     }
 
     public function test_it_does_not_allow_to_retrieve_unknown_property()
     {
-        $this->setExpectedException('Exception');
+        $this->expectException('Exception');
 
         $this->message->foobar;
     }
